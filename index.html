@@ -1,21 +1,59 @@
 <html>
 <head>
+<!--  ----------------------------------------------------------------------  -->
+<!--  次の <META> 要素を、HTML の <HEAD>タグ間に追加してください。必要に応じて、charset                  -->
+<!--  パラメータを変更して、HTML ページの文字コードを指定してください。                                     -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  次の <FORM> 要素をページに追加してください。                                              -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://cs5.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+<input type=hidden name="orgid" value="00DO0000004uMJE">
+<input type=hidden name="retURL" value="https://www.skyperfectv.co.jp/">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  注意: これらの項目は、省略可能なデバッグ用要素です。デバッグモードでテストを行う場合は、これらの行をコメント解除してください。        -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail" value="spccts@terrasky.com">     -->
+<!--  ----------------------------------------------------------------------  -->
+<label for="description">■---------------Web問合せ用仮フォーム----------------■</label><br>
+<label for="name">取引先責任者名</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+
+メールアドレス:<input  id="00NO0000002u9qf" maxlength="80" name="00NO0000002u9qf" size="20" type="text" /><br>
+
+<label for="phone">電話</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+<label for="subject">件名</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+
+<label for="description">説明</label><textarea name="description"></textarea><br>
+
+<input type="submit" name="submit"><br><br><br>
+
+
+<label for="description">■-------LiveAgent用ボタン(上のフォームは無関係)-------■</label><br>
+ 
+
+</form>
+ 
 <script type='text/javascript' src='https://c.la1-c1cs-ukb.salesforceliveagent.com/content/g/js/41.0/deployment.js'></script>
 <script type='text/javascript'>
 liveagent.init('https://d.la1-c1cs-ukb.salesforceliveagent.com/chat', '572O00000004CQY', '00DO0000004uMJE');
 </script>
 
-<a id="liveagent_button_online_573O00000004CYw" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('573O00000004CYw')"><!-- �I�����C���`���b�g�R���e���c --></a><div id="liveagent_button_offline_573O00000004CYw" style="display: none;"><!-- �I�t���C���`���b�g�R���e���c --></div><script type="text/javascript">
+<a id="liveagent_button_online_573O00000004CYw" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('573O00000004CYw')"><!-- オンラインチャットコンテンツ --></a><div id="liveagent_button_offline_573O00000004CYw" style="display: none;"><!-- オフラインチャットコンテンツ --></div><script type="text/javascript">
 if (!window._laq) { window._laq = []; }
 window._laq.push(function(){liveagent.showWhenOnline('573O00000004CYw', document.getElementById('liveagent_button_online_573O00000004CYw'));
 liveagent.showWhenOffline('573O00000004CYw', document.getElementById('liveagent_button_offline_573O00000004CYw'));
 });</script>
 
-
-
-      <button onclick="liveagent.startChat('573O00000004CYw');">�e�X�g�`���b�g</button><br>
+<button onclick="liveagent.startChat('573O00000004CYw');">START CHAT</button><br>
 <div id="liveagent_invite_button_573O00000004CYw" style="display:none;">
-<span style="cursor: pointer; width: 100px; height: 20px; padding: 5px;" onclick="liveagent.startChat('573O00000004CYw')">�`���b�g���J�n</span>
-<span style="cursor: pointer; width: 100px; height: 20px; padding: 5px;" onclick="liveagent.rejectChat('573O00000004CYw')">�`���b�g������</span></div>
 </body>
+</head>
+
 </html>
